@@ -1,0 +1,29 @@
+:root {
+  --title-page-fz: clamp(2.5rem, 2.2115rem + 1.2821vw, 3.75rem);
+  --content-page-fz: clamp(1.125rem, 0.9231rem + 0.8974vw, 2rem);
+  --list-content-fz: clamp(1.125rem, 1.0385rem + 0.3846vw, 1.5rem);
+  --accent-text-color: #fa9600;
+}
+
+ul.proposition__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.proposition__list li {
+  font-size: var(--list-content-fz);
+  line-height: 1;
+}
+
+ul.proposition__list li::before {
+  content: ""; /* Можно заменить на символ или иконку */
+  display: inline-block;
+  width: 16px; /* Настроить размер */
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(public/icons/point.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
