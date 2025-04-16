@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .accent-text-color {
   font-weight: 700;
   color: var(--accent-text-color);
@@ -9,6 +10,7 @@ main {
 
 section.description,
 section.representative {
+  font-family: "Montserrat", sans-serif;
   --title-page-fz: clamp(2.5rem, 2.0673rem + 1.9231vw, 3.75rem);
   --content-page-fz: clamp(1.125rem, 0.8221rem + 1.3462vw, 2rem);
   --list-content-fz: clamp(1.125rem, 0.9952rem + 0.5769vw, 1.5rem);
@@ -36,7 +38,6 @@ section.representative {
 
 section.description .section-title,
 section.representative .section-title {
-  font-family: "Roboto", sans-serif;
   font-size: var(--title-page-fz);
   font-weight: 700;
   line-height: 1;
